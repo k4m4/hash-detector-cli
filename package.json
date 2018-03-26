@@ -1,0 +1,43 @@
+{
+  "name": "hash-detector-cli",
+  "version": "1.0.0",
+  "description": "Detect the type of hash in a string.",
+  "license": "MIT",
+  "repository": "k4m4/hash-detector-cli",
+  "author": {
+    "name": "Nikolaos Kamarinakis",
+    "url": "nikolaskama.me",
+    "email": "nikolaskam@gmail.com"
+  },
+  "bin": {
+    "hash-detect": "cli.js",
+    "hash-detector": "cli.js"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "ava"
+  },
+  "keywords": [
+    "hash",
+    "detector",
+    "cli",
+    "md5",
+    "sha"
+  ],
+  "files": [
+    "cli.js"
+  ],
+  "devDependencies": {
+    "ava": "*"
+  },
+  "dependencies": {
+    "execa": "^0.10.0",
+    "get-stdin": "^6.0.0",
+    "hash-detector": "^1.1.0",
+    "log-symbols": "^2.2.0",
+    "meow": "^4.0.0"
+  }
+}
