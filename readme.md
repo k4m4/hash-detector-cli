@@ -1,6 +1,6 @@
 # hash-detector-cli [![Build Status](https://travis-ci.org/k4m4/hash-detector-cli.svg?branch=master)](https://travis-ci.org/k4m4/hash-detector-cli)
 
-> Detect the type of hash in a string.
+> Detect the possible hash-types corresponding to a string, right from your terminal.
 
 ---
 
@@ -30,13 +30,21 @@
 
 ## Supported Hashes
 
-- [`Base64`](https://github.com/kevva/base64-regex)
-- [`MD5`](https://github.com/k4m4/md5-regex)
-- [`SHA1`](https://github.com/k4m4/sha-regex)
-- [`SHA224`](https://github.com/k4m4/sha-regex)
-- [`SHA256`](https://github.com/k4m4/sha-regex)
-- [`SHA384`](https://github.com/k4m4/sha-regex)
-- [`SHA512`](https://github.com/k4m4/sha-regex)
+- `MD2`, `MD4`, `MD5`, `MD6`
+- `SHA-1`, `SHA-224`, `SHA-256`, `SHA-384`, `SHA-512`
+- `HAVAL-128`, `HAVAL-160`, `HAVAL-192`, `HAVAL-224`, `HAVAL-256`
+- `Tiger`, `Tiger-128`, `Tiger-192`
+- `RIPEMD`, `RIPEMD-180`, `RIPEMD-256`, `RIPEMD-320`
+- `Snerfu-128`, `Snerfu-256`
+- `Streebog-256`, `Streebog-512`
+- `FNV-1-32`, `FNV-1-64`
+- `FNV-1a-32`, `FNV-1a-52`, `FNV-1a-64`, `FNV-1a-1024`, `FNV-1a-128`, `FNV-1a-512`
+- `HAS-160`
+- `GOST`
+- `MDC-2`
+- `BLAKE-512`
+- `Whirpool`
+- `Spectral Hash`
 
 
 ## Related

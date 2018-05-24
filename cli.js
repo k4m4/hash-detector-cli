@@ -19,7 +19,7 @@ const input = cli.input[0];
 
 function display (hashType) {
 	if (hashType != 'Hash type could not be detected') {
-		console.log(`${logSymbols.success} ` + hashType)
+		console.log(`${logSymbols.success} ` + hashType.join(', '))
 	} else {
 		console.log(`${logSymbols.error} Hash type could not be detected`);
 	}

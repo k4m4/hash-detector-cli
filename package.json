@@ -1,7 +1,7 @@
 {
   "name": "hash-detector-cli",
   "version": "1.0.0",
-  "description": "Detect the type of hash in a string.",
+  "description": "Detect the possible hash-types corresponding to a string, right from your terminal.",
   "license": "MIT",
   "repository": "k4m4/hash-detector-cli",
   "author": {
@@ -35,8 +35,8 @@
   "dependencies": {
     "execa": "^0.10.0",
     "get-stdin": "^6.0.0",
-    "hash-detector": "^1.1.0",
+    "hash-detector": "^2.0.1",
     "log-symbols": "^2.2.0",
-    "meow": "^4.0.0"
+    "meow": "^4.0.1"
   }
 }
