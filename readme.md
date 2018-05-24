@@ -23,8 +23,8 @@
     ~ ❯❯❯ echo <string> | hash-detect
     ~ ❯❯❯ cat <file> | hash-detect
   Example
-    ~ ❯❯❯ hash-detect 1abcb33beeb811dca15f0ac3e47b88d9
-    ✔ md5
+    ~ ❯❯❯ hash-detect 17413f944145f37dcaa9bc55d9a201a248a08aae
+    ✔ SHA-1, RIPEMD, Tiger, HAVAL-160, HAS-160
 ```
 
 
