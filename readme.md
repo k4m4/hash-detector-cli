@@ -7,7 +7,7 @@
 ## Install
 
 ```
-~ ❯❯❯ npm install -g hash-detector-type
+~ ❯❯❯ npm install -g hash-detector
 ```
 
 
