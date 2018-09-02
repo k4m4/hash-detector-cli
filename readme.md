@@ -22,6 +22,8 @@
     ~ ❯❯❯ hash-detect <string>
     ~ ❯❯❯ echo <string> | hash-detect
     ~ ❯❯❯ cat <file> | hash-detect
+  Options
+  	-p, --plain   Display output without log symbols
   Example
     ~ ❯❯❯ hash-detect 17413f944145f37dcaa9bc55d9a201a248a08aae
     ✔ SHA-1, RIPEMD, Tiger, HAVAL-160, HAS-160
