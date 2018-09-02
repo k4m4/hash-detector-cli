@@ -1,9 +1,9 @@
 #!/usr/bin/env node
-'use strict';
-const meow       = require('meow');
-const getStdin   = require('get-stdin');
-const logSymbols = require('log-symbols');
-const hashDetect = require('hash-detector');
+'use strict'
+const meow       = require('meow')
+const getStdin   = require('get-stdin')
+const logSymbols = require('log-symbols')
+const hashDetect = require('hash-detector')
 
 const cli = meow(`
 	Usage
@@ -23,9 +23,9 @@ const cli = meow(`
 			default: false
 		}
 	}
-});
+})
 
-const input = cli.input[0];
+const input = cli.input[0]
 
 function display (hashType) {
 	if (hashType != 'Hash type could not be detected') {
@@ -33,23 +33,23 @@ function display (hashType) {
 		console.log(leading + hashType.join(', '))
 	} else {
 		const leading = (cli.flags["plain"]) ? `` : `${logSymbols.error} `
-		console.log(leading + `Hash type could not be detected`);
+		console.log(leading + `Hash type could not be detected`)
 	}
 }
 
 if (!input && process.stdin.isTTY) {
-	console.log('Specify a hash to identify its type');
-	process.exit(1);
+	console.log('Specify a hash to identify its type')
+	process.exit(1)
 }
 if (input) {
 	hashDetect(input.trim())
 		.then(hashType => {
-			display(hashType);
+			display(hashType)
 		})
 } else {
 	getStdin().then(stdin => {
 		hashDetect(stdin.trim()).then(hashType => {
-			display(hashType);
+			display(hashType)
 		})
 	})
 }
