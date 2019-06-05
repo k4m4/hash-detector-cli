@@ -30,12 +30,12 @@
     "cli.js"
   ],
   "devDependencies": {
-    "ava": "*"
+    "ava": "^2.0.0"
   },
   "dependencies": {
     "execa": "^0.10.0",
     "get-stdin": "^6.0.0",
-    "hash-detector": "^2.0.1",
+    "hash-detector": "^2.0.3",
     "log-symbols": "^2.2.0",
     "meow": "^4.0.1"
   }
