@@ -14,7 +14,7 @@
     "hash-detector": "cli.js"
   },
   "engines": {
-    "node": ">=4"
+    "node": ">=9"
   },
   "scripts": {
     "test": "ava"
