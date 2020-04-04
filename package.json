@@ -13,6 +13,9 @@
     "hash-detect": "cli.js",
     "hash-detector": "cli.js"
   },
+  "ava": {
+    "babel": true
+  },
   "engines": {
     "node": ">=9"
   },
@@ -30,7 +33,8 @@
     "cli.js"
   ],
   "devDependencies": {
-    "ava": "^2.0.0"
+    "@ava/babel": "^1.0.1",
+    "ava": "^3.5.2"
   },
   "dependencies": {
     "execa": "^0.10.0",
